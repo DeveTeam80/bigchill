@@ -68,7 +68,6 @@ Version: 1.0
 .ds-hero-sec {
   padding: 325px 0 130px;
   background-color: #f9f4fc;
-  overflow: hidden;
 }
 @media (max-width: 1650px) {
   .ds-hero-sec {
@@ -162,11 +161,12 @@ Version: 1.0
   width: 55%;
   top: 25%;
 }
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 800px) {
   .ds-hero-sec .hero-image-wrap {
     display: none;
   }
 }
+
 .ds-hero-sec .hero-image-wrap .hero-image {
   text-align: center;
   margin-left: -150px;
@@ -206,7 +206,7 @@ Version: 1.0
 }
 
 .bistly-author-box {
-  background-color: var(--primary-black-color);
+  background-color: #55c3ac;
   max-width: 380px;
   padding: 30px 30px 10px;
   border-radius: 20px;
@@ -493,18 +493,10 @@ Version: 1.0
   border-radius: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-.bistly-choose-item .content h4.bg-one {
-  background-color: #f9f4fc;
+.bistly-choose-item .content h4 {
+  background: linear-gradient(135deg, #f9f4e5 0%, #cae9d8 100%);
 }
-.bistly-choose-item .content h4.bg-two {
-  background-color: #f6f9e1;
-}
-.bistly-choose-item .content h4.bg-three {
-  background-color: #e7f4fc;
-}
-.bistly-choose-item .content h4.bg-four {
-  background-color: #fee;
-}
+
 @media screen and (max-width: 1199.98px) {
   .bistly-choose-item .content h4 {
     font-size: 18px;
@@ -685,7 +677,6 @@ Version: 1.0
     #f7f5fb 69.21%,
     #f5eaf6 100%
   );
-  padding-bottom: 240px;
 }
 
 .testimonial-slider .slick-arrow {
@@ -1028,11 +1019,30 @@ Version: 1.0
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .bistly-food-item .hover-image {
-  -webkit-transition: opacity 0.3s, 1, 0.32, 1,
+  -webkit-transition:
+    opacity 0.3s,
+    1,
+    0.32,
+    1,
     -webkit-transform 0.7scubic-bezier 0.23;
-  transition: opacity 0.3s, 1, 0.32, 1, -webkit-transform 0.7scubic-bezier 0.23;
-  transition: opacity 0.3s, transform 0.7scubic-bezier 0.23, 1, 0.32, 1;
-  transition: opacity 0.3s, transform 0.7scubic-bezier 0.23, 1, 0.32, 1,
+  transition:
+    opacity 0.3s,
+    1,
+    0.32,
+    1,
+    -webkit-transform 0.7scubic-bezier 0.23;
+  transition:
+    opacity 0.3s,
+    transform 0.7scubic-bezier 0.23,
+    1,
+    0.32,
+    1;
+  transition:
+    opacity 0.3s,
+    transform 0.7scubic-bezier 0.23,
+    1,
+    0.32,
+    1,
     -webkit-transform 0.7scubic-bezier 0.23;
   position: absolute;
   width: 250px;
