@@ -161,7 +161,7 @@ Version: 1.0
   width: 55%;
   top: 25%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .ds-hero-sec .hero-image-wrap {
     display: none;
   }
@@ -394,6 +394,7 @@ Version: 1.0
 }
 .ds-about-sec .bistly-about-box .section-title .sub-title {
   margin-bottom: 5px;
+  margin-bottom: 4rem;
 }
 .ds-about-sec .bistly-about-box p {
   line-height: 27px;
