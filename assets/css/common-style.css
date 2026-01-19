@@ -1462,7 +1462,8 @@ header.header-area {
   color: white;
 }
 .footer-widget .widget-content a img {
-  height: 35vh;
+  height: 25vh;
+  margin-top: 1rem;
 }
 .footer-time-widget .widget-content ul li:not(:last-child) {
   margin-bottom: 13px;
@@ -1639,7 +1640,7 @@ header.header-area {
     display: flex !important;
     justify-content: center !important;
     position: relative !important;
-    top: 8vh !important;
+    top: 3vh !important;
   }
 }
 
@@ -1693,6 +1694,11 @@ header.header-area {
 
 .home-bannerLogo {
   height: 28vh;
+}
+@media (max-width: 575px) {
+  .home-bannerLogo {
+    height: 20vh;
+  }
 }
 
 /* Interactive Hover */
@@ -2054,6 +2060,14 @@ header.header-area {
   margin-top: 6vh;
 }
 
+@media (max-width: 575px) {
+  scroll-stack-test > .item {
+    margin-top: 20vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+}
+
 /* Ensure img itself is block-centered and not floated by any other rules */
 #scroll-stack-test > .item img {
   display: block !important;
@@ -2064,6 +2078,12 @@ header.header-area {
   height: auto !important;
   object-fit: contain !important;
   pointer-events: none !important;
+}
+
+@media (max-width: 575px) {
+  scroll-stack-test > .item img {
+    height: 25vh !important;
+  }
 }
 
 /* text centering */
@@ -2079,7 +2099,14 @@ header.header-area {
   float: none !important;
 }
 
-.category-name h1 {
+@media (max-width: 575px) {
+  .category-name {
+    width: 90vw !important;
+    margin-bottom: 10vh !important;
+  }
+}
+
+.category-name h2 {
   color: #8abdb2;
 }
 
